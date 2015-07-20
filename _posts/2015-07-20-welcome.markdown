@@ -2,16 +2,16 @@
 layout:     post
 title:      "Welcome"
 subtitle:   "This might be what you have been waiting"
-date:       2015-20-20 4:09:00
+date:       2015-07-20 4:09:00
 author:     "Start Bootstrap"
 header-img: "img/post-bg-01.jpg"
 ---
 
-<p>My name is Chris and I am computer programmer</p>
+<p>My name is Chris and I am a computer programmer</p>
 
 <h2 class="section-heading">What?</h2>
 
-<p>I have always had a dream of having blog to put out my ideas, experience and chanllanges as a programmer to the puplic; this is it.</p>
+<p>I have always had a dream of putting out my ideas, experience and chanllanges as a programmer to the puplic; this is it.</p>
 
 
 <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
