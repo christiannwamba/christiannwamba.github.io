@@ -3,8 +3,11 @@ layout:     post
 title:      "Welcome"
 subtitle:   "This might be what you have been waiting"
 date:       2015-07-20 4:09:00
-author:     "Start Bootstrap"
+author:     "Christian Nwamba"
 header-img: "img/post-bg-01.jpg"
+tags: "welcome"
+comments: true
+addthis: true
 ---
 
 <p>My name is Chris and I am a computer programmer</p>
@@ -16,8 +19,21 @@ header-img: "img/post-bg-01.jpg"
 
 <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
 
+<pre class="line-numbers" data-line="1-3"><code class="language-javascript">
+    function welcome(){
+            return "This is the first post"
+    }
+</code></pre>
 
 <a href="#">
     <img src="{{ site.baseurl }}/img/home-bg.jpg" alt="Post Sample Image">
 </a>
 <span class="caption text-muted">This is my live and my passion</span>
+
+{% if page.comments %}
+{% include disqus.html %}
+{% endif %}
+
+{% if page.addthis %}
+{% include addthis.html %}
+{% endif %}
