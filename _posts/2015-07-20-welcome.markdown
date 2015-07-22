@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Welcome"
-subtitle:   "This might be what you have been waiting"
+subtitle:   "This might be what you have been waiting for"
 date:       2015-07-20 4:09:00
 author:     "Christian Nwamba"
 header-img: "img/post-bg-01.jpg"
@@ -29,6 +29,8 @@ addthis: true
     <img src="{{ site.baseurl }}/img/home-bg.jpg" alt="Post Sample Image">
 </a>
 <span class="caption text-muted">This is my live and my passion</span>
+
+
 
 {% if page.comments %}
 {% include disqus.html %}
