@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Welcome"
-subtitle:   "This might be what you have been waiting for"
+subtitle:   "This might be what you have been waiting for. . ."
 date:       2015-07-20 4:09:00
 author:     "Christian Nwamba"
 header-img: "img/post-bg-01.jpg"
