@@ -8,10 +8,13 @@ url: "http://christekh.com"
 twitter_username: chrizt_n
 github_username:  christiannwamba
 facebook_username:  nwambachristian
+tag_page_layout: tag_page
+tag_page_dir: tag
 
 # Build settings
 markdown: kramdown
 highlighter: rogue
 permalink: pretty
+tag_permalink_style: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
