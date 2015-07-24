@@ -29,13 +29,3 @@ addthis: true
     <img src="{{ site.baseurl }}/img/home-bg.jpg" alt="Post Sample Image">
 </a>
 <span class="caption text-muted">This is my live and my passion</span>
-
-
-
-{% if page.comments %}
-{% include disqus.html %}
-{% endif %}
-
-{% if page.addthis %}
-{% include addthis.html %}
-{% endif %}

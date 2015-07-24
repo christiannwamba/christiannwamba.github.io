@@ -13,7 +13,7 @@ tag_page_dir: tag
 
 # Build settings
 markdown: kramdown
-highlighter: rogue
+highlighter: pygments
 permalink: pretty
 tag_permalink_style: pretty
 paginate: 5
