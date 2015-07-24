@@ -5,14 +5,14 @@ subtitle:   "List of most used and important mongoose query methods"
 date:       2015-07-24 1:29:00
 author:     "Christian Nwamba"
 header-img: "img/post-mongoose-queries.jpg"
-tags: ["mongoose", "node"]
+tags: ["mongoose", "node", "express"]
 comments: true
 addthis: true
 ---
 
-<blockquote>Let's face it, writing MongoDB validation, casting and business logic boilerplate is a drag. That's why we wrote Mongoose. - <a href="mongoosejs.com">Mongoose</a></blockquote>
 
-<h2 class="section-heading">Overview?</h2>
+
+<h2 class="section-heading">Overview</h2>
 
 <p>
 <a href="mongoosejs.com">Mongoose</a> basically is a node library which simplifies the use of Mongo DB
@@ -130,4 +130,4 @@ Nerds.where('age').lte(20).exec(callback);
 <h2>Conclusion</h2>
 <p>Not so fast!</p>
 <p>Let's get a cup a coffee and continue in the next section</p>
-<p><a href="">Popular Mongoose Query Methods with Examples 2</a></p>
+<p><a href="{{site.baseUrl}}/2015/07/24/popular-mongoose-query-methods-with-examples-2">Popular Mongoose Query Methods with Examples 2</a></p>
