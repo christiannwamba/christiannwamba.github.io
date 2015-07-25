@@ -108,7 +108,7 @@ To get started, if you have not done this yet, run:
 <pre>
     <code class="language-markup">
         <!--Make sure it is after ionic and before cordova-->
-         <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+         &lt;script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
     </code>
 </pre>
 <p>Then include as a dependecy to you angular app in <code>www/js/app.js</code></p>
