@@ -107,8 +107,8 @@ To get started, if you have not done this yet, run:
 </p>
 <pre>
     <code class="language-markup">
-        <!--Make sure it is after ionic and before cordova-->
-         &lt;script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+        &lt;!--Make sure it is after ionic and before cordova-->
+         &lt;script src="lib/ngCordova/dist/ng-cordova.min.js">&lt;/script>
     </code>
 </pre>
 <p>Then include as a dependecy to you angular app in <code>www/js/app.js</code></p>
@@ -172,13 +172,13 @@ angular.module('starter', ['ionic', 'ngCordova'])
       &lt;div class="card">
         &lt;ul class="list">
           &lt;li class="item">
-            Platorm : {{device.platform}}
+            Platorm : &#123;{device.platform}}
           &lt;/li>
           &lt;li class="item">
-            Model : {{device.model}}
+            Model : &#123;{device.model}}
           &lt;/li>
           &lt;li class="item">
-            UUID : {{device.uuid}}
+            UUID : &#123;{device.uuid}}
           &lt;/li>
         &lt;/ul>
       &lt;/div>
