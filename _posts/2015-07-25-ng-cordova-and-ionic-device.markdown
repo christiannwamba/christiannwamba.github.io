@@ -87,8 +87,9 @@ To get started, if you have not done this yet, run:
         and the phone are on the same network</li>
     </ol>
 </p>
-
+<center>
 <img src="{{site.baseUrl}}/img/screenshots/Screenshot_2015-07-25-20-21-15.png" style="height:400px; width:auto">
+</center>
 <span class="caption text-muted">Default look of app after first run</span>
 
 <h3>Rest of the code</h3>
@@ -192,8 +193,9 @@ angular.module('starter', ['ionic', 'ngCordova'])
       We attached the controller to the body tag so we can have access to the device
       property of it's scope. The rest is basic HTML and angular. Thats all!
   </p>
-  
+  <center>
   <img src="{{site.baseUrl}}/img/screenshots/Screenshot_2015-07-25-22-12-08.png" style="height:600px; width:auto">
+  </center>
   <span class="caption text-muted">Finally!...</span>
   
   <h3>Conclusion</h3>
