@@ -42,7 +42,16 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           <div class="col-lg-2 col-md-1 hidden-sm">
+              <center>
+               <img src="{{site.baseUrl}}/img/dp.jpg" class="avatar" alt="Me">
+               <p class="caption text-muted">{{post.author}}</p>
+               <p class="caption text-muted"><a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></p>
+               <p class="caption text-muted"><a href="https://www.facebook.com/{{ site.facebook_username }}">Facebook</a></p>
+               <p class="caption text-muted"><a href="https://github.com/{{ site.github_username }}">GitHub</a></p>
+               </center>
+           </div>
+            <div class="col-lg-8 col-md-10">
 
 				{{ content }}
 

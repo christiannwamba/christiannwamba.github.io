@@ -8,6 +8,7 @@ header-img: "img/post-mongoose-queries.jpg"
 tags: ["mongoose", "node", "express"]
 comments: true
 addthis: true
+keywords: "mongoose, node, express"
 ---
 
 

@@ -12,3 +12,15 @@
 
 - slug: express
   name: Express
+  
+- slug: ng-cordova
+  name: ngCordova
+
+- slug: cordova
+  name: Cordova
+  
+- slug: ionic
+  name: Ionic
+  
+- slug: android
+  name: Android

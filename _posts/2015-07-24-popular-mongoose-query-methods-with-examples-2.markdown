@@ -8,6 +8,7 @@ header-img: "img/post-mongoose-queries.jpg"
 tags: ["mongoose", "node", "express"]
 comments: true
 addthis: true
+keywords: "mongoose, node, express"
 ---
 
 <p>In the <a href="{{site.baseUrl}}/2015/07/24/popular-mongoose-query-methods-with-examples">Previous Post</a>
