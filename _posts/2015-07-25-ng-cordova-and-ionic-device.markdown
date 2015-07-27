@@ -200,7 +200,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
   
   <h3>Conclusion</h3>
   <p>
-      Remember what I told you in the beginning? This is the beginning if a series on ngCordova.
+      Remember what I told you in the beginning? This is the beginning of a series on ngCordova.
       To see more on this, click the tags tagged on this article. Thank you for reading.
       I appreciate!...
   </p>
