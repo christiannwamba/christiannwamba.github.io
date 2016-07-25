@@ -9,14 +9,22 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" href="javascripts/markedit/markedit.min.css">
+    <style media="screen">
+      .jumbo{
+        background: #2c3e50;
+      }
+      .jumbo img{
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
 </head>
 
 <body>
+  <div class="jumbo">
+    <img src="markedit-tagline.jpg" alt="Markedit" />
+  </div>
     <section class="main-content">
-        <section class="page-header">
-            <h1 class="project-name">Markedit</h1>
-            <h2 class="project-tagline">Markedit is a simple JavaScript only markdown widget.</h2>
-        </section>
         <p>
             <a href="https://travis-ci.org/christiannwamba/markedit">
                 <embed src="https://travis-ci.org/christiannwamba/markedit.svg?branch=master" />
@@ -25,11 +33,11 @@
             <a href="https://codeclimate.com/github/christiannwamba/markedit"><img src="https://codeclimate.com/github/christiannwamba/markedit/badges/gpa.svg" alt="Code Climate" /></a>
             <a href="https://codeclimate.com/github/christiannwamba/markedit/coverage"><img src="https://codeclimate.com/github/christiannwamba/markedit/badges/coverage.svg" alt="Test Coverage" /></a>
         </p>
-        <div class="figure">
-            <img src="markedit.jpg" alt="Markedit" />
-        </div>
-        <div id="md1"></div>
-        <h2 id="features">Features</h2>
+        <h2>Demo</h2>
+        <div id="mdDemo"></div>
+        <br>
+        <br>
+        <h2>Features</h2>
         <ul>
             <li><strong>Small</strong> and <strong>simple</strong></li>
             <li>Not <strong>jQuery</strong> dependent</li>
@@ -235,8 +243,9 @@ app.listen(app.get(&#39;port&#39;), function () {
         </div>
         <script type="text/javascript" src="javascripts/markedit/markedit.min.js"></script>
         <script type="text/javascript">
-            var md1 = new Markedit({
-                container: 'md1'
+            var mdDemo = new Markedit({
+                container: 'mdDemo',
+                width: '100%'
             });
         </script>
 </body>
