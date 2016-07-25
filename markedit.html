@@ -165,7 +165,7 @@ var markedit = new Markedit(options);</code></pre>
       console.log(e);
     }
 };</code></pre>
-      <div id="mdEvents"></div>
+      <!-- <div id="mdEvents"></div> -->
         <h2 id="image-upload">Image Upload</h2>
         <p>Markedit supports image upload. To enable this feature, set the <code>imageUrl</code> to the url upload endpoint</p>
         <pre class="language-js"><code>var options = {
@@ -195,7 +195,7 @@ app.post(&#39;/api/image&#39;, upload.single(&#39;image&#39;), function (req, re
 app.listen(app.get(&#39;port&#39;), function () {
             console.log(`Server started: http://localhost:${port}/`);
         });</code></pre>
-        <div id="mdImage"></div>
+        <!-- <div id="mdImage"></div> -->
         <h2 id="custom-style">Custom Style</h2>
         <p>You can override the provided style. To do so, you need to understand the DOM hierachy. Below is how the DOM looks under the hood:</p>
         <pre class="sourceCode language-markup"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit&quot;</span><span class="kw">&gt;</span>
