@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" href="javascripts/markedit/markedit.min.css">
+    <link rel="stylesheet" href="javascripts/prism/prism.css">
     <style media="screen">
       .jumbo{
         background: #2c3e50;
@@ -59,21 +60,21 @@
         <ul>
             <li>Include Markedit to your code</li>
         </ul>
-        <pre class="js"><code>var Markedit = require(&#39;markedit&#39;);
+        <pre class="language-js"><code>var Markedit = require(&#39;markedit&#39;);
 
 var markedit = new Markedit(options);</code></pre>
         <p>Or</p>
-        <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;dist/markedit.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+        <pre class="sourceCode language-markup"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;dist/markedit.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
 <span class="kw">&lt;script&gt;</span>
 <span class="er">    var markedit = new Markedit(options);</span>
 <span class="kw">&lt;/script&gt;</span></code></pre>
         <p>Include the css file:</p>
-        <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;dist/markedit.css&quot;</span><span class="kw">&gt;</span></code></pre>
+        <pre class="sourceCode language-markup"><code class="sourceCode html"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;dist/markedit.css&quot;</span><span class="kw">&gt;</span></code></pre>
         <p><code>markedit.css</code> references the font files which is available in the dist folder. If you plan to go custom, see <a href="https://github.com/christiannwamba/markedit#custom-style">Custom Styles</a></p>
         <ul>
             <li>Configure Options</li>
         </ul>
-        <pre class="js"><code>var options = {
+        <pre class="language-js"><code>var options = {
             container: &#39;md&#39;,
             width: &#39;400px&#39;,
             height: &#39;400px&#39;,
@@ -82,7 +83,7 @@ var markedit = new Markedit(options);</code></pre>
         <ul>
             <li>Load</li>
         </ul>
-        <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;page_wrap&quot;</span><span class="kw">&gt;</span>
+        <pre class="sourceCode html"><code class="sourceCode language-markup"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;page_wrap&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;md&quot;</span><span class="kw">&gt;&lt;/div&gt;</span>
 <span class="kw">&lt;/div&gt;</span></code></pre>
         <h2 id="configuration">Configuration</h2>
@@ -135,7 +136,7 @@ var markedit = new Markedit(options);</code></pre>
         <ul>
             <li><strong>onFocus</strong>: Called when the editor has focus:</li>
         </ul>
-        <pre class="js"><code>var options = {
+        <pre class="language-js"><code>var options = {
     onFocus: function(e) {
       console.log(e);
     }
@@ -143,7 +144,7 @@ var markedit = new Markedit(options);</code></pre>
         <ul>
             <li><strong>onBlur</strong>: Called when the editor looses focus:</li>
         </ul>
-        <pre class="js"><code>var options = {
+        <pre class="language-js"><code>var options = {
     onBlur: function(e) {
       console.log(e);
     }
@@ -151,7 +152,7 @@ var markedit = new Markedit(options);</code></pre>
         <ul>
             <li><strong>onPreview</strong>: Called when the preview button is clicked:</li>
         </ul>
-        <pre class="js"><code>var options = {
+        <pre class="language-js"><code>var options = {
     onPreview: function(e) {
       console.log(e);
     }
@@ -159,7 +160,7 @@ var markedit = new Markedit(options);</code></pre>
         <ul>
             <li><strong>onFullscreen</strong>: Called when the full screen button is clicked:</li>
         </ul>
-        <pre class="js"><code>var options = {
+        <pre class="language-js"><code>var options = {
     onFullscreen: function(e) {
       console.log(e);
     }
@@ -167,16 +168,16 @@ var markedit = new Markedit(options);</code></pre>
       <div id="mdEvents"></div>
         <h2 id="image-upload">Image Upload</h2>
         <p>Markedit supports image upload. To enable this feature, set the <code>imageUrl</code> to the url upload endpoint</p>
-        <pre class="js"><code>var options = {
+        <pre class="language-js"><code>var options = {
     imageUrl: &#39;http://localhost:3000/images/upload&#39;
 }</code></pre>
         <p>The normal behavior of clicking the image button is to insert markdown image template at the cursor position but with image upload enabled, a file upload dialogue will be opened.</p>
         <p>The end point provided should return a response that has an image property:</p>
-        <pre class="js"><code>{
+        <pre class="language-js"><code>{
     image: &#39;http://localhost:3000/uploads/just-uploaded.jpg&#39;
 }</code></pre>
         <p>An example handler using express and multer:</p>
-        <pre class="js"><code>// Imports
+        <pre class="language-js"><code>// Imports
 var express = require(&#39;express&#39;);
 var bodyParser = require(&#39;body-parser&#39;);
 var multer = require(&#39;multer&#39;);
@@ -197,7 +198,7 @@ app.listen(app.get(&#39;port&#39;), function () {
         <div id="mdImage"></div>
         <h2 id="custom-style">Custom Style</h2>
         <p>You can override the provided style. To do so, you need to understand the DOM hierachy. Below is how the DOM looks under the hood:</p>
-        <pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit&quot;</span><span class="kw">&gt;</span>
+        <pre class="sourceCode language-markup"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit__controls&quot;</span><span class="kw">&gt;</span>
       <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;markedit__control bold&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;i</span><span class="ot"> class=</span><span class="st">&quot;icon-bold&quot;</span><span class="kw">&gt;&lt;/i&gt;</span>
@@ -219,7 +220,7 @@ app.listen(app.get(&#39;port&#39;), function () {
     <span class="kw">&lt;/div&gt;</span>
   <span class="kw">&lt;/div&gt;</span></code></pre>
         <p>What you can then do is use the classes to target each item and add your custom style::</p>
-        <pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.markedit__preview</span><span class="kw">{</span>
+        <pre class="sourceCode language-css"><code class="sourceCode css"><span class="fl">.markedit__preview</span><span class="kw">{</span>
     <span class="kw">background:</span> <span class="dt">black</span><span class="kw">;</span>
     <span class="kw">color:</span> <span class="dt">white</span><span class="kw">;</span>
 <span class="kw">}</span></code></pre>
@@ -245,7 +246,9 @@ app.listen(app.get(&#39;port&#39;), function () {
         <p><span class="citation"><a href="https://twitter.com/chrizt_n" id="support-or-contact">@chrizt_n</a></span></p>
         </div>
         <a href="https://github.com/christiannwamba/markedit"><img style="position: absolute; top: 0; right: 0; border: 0; cursor:pointer" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
         <script type="text/javascript" src="javascripts/markedit/markedit.min.js"></script>
+        <script type="text/javascript" src="javascripts/prism/prism.js"></script>
         <script type="text/javascript">
             var mdDemo = new Markedit({
                 container: 'mdDemo',
