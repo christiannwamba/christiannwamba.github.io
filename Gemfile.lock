@@ -1,0 +1,22 @@
+GEM
+  specs:
+    addressable (2.4.0)
+    jekyll-paginate (1.1.0)
+    jekyll-sitemap (0.11.0)
+      addressable (~> 2.4.0)
+    jekyll-tagging (1.0.1)
+      ruby-nuggets
+    nuggets (1.0.0)
+    ruby-nuggets (1.0.0)
+      nuggets (= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jekyll-paginate
+  jekyll-sitemap
+  jekyll-tagging
+
+BUNDLED WITH
+   1.12.5
