@@ -1,172 +1,172 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-   <title>Markedit</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-   <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  <link rel="stylesheet" href="javascripts/markedit/markedit.min.css">
+    <meta charset="UTF-8">
+    <title>Markedit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="javascripts/markedit/markedit.min.css">
 </head>
 
 <body>
-  <section class="main-content">
-    <section class="page-header">
-      <h1 class="project-name">Markedit</h1>
-      <h2 class="project-tagline">Markedit is a simple JavaScript only markdown widget.</h2>
-    </section>
-    <p>
-        <a href="https://travis-ci.org/christiannwamba/markedit">
-            <embed src="https://travis-ci.org/christiannwamba/markedit.svg?branch=master" />
-        </a>
-        <a href="https://www.npmjs.com/package/markedit"><img src="https://badge.fury.io/js/markedit.svg" alt="npm version" /></a>
-        <a href="https://codeclimate.com/github/christiannwamba/markedit"><img src="https://codeclimate.com/github/christiannwamba/markedit/badges/gpa.svg" alt="Code Climate" /></a>
-        <a href="https://codeclimate.com/github/christiannwamba/markedit/coverage"><img src="https://codeclimate.com/github/christiannwamba/markedit/badges/coverage.svg" alt="Test Coverage" /></a>
-    </p>
-    <div class="figure">
-        <img src="markedit.jpg" alt="Markedit" />
-        <p class="caption">Markedit</p>
-    </div>
-    <h2 id="features">Features</h2>
-    <ul>
-        <li><strong>Small</strong> and <strong>simple</strong></li>
-        <li>Not <strong>jQuery</strong> dependent</li>
-        <li>Easy <strong>Image</strong> upload</li>
-        <li>Easy to <strong>customize</strong></li>
-        <li>Works with any browser above <strong>IE9</strong></li>
-    </ul>
-    <h2 id="getting-started">Getting Started</h2>
-    <ul>
-        <li>Add Markedit to your project using NPM or bower by running either of the following:</li>
-    </ul>
-    <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># NPM</span>
+    <section class="main-content">
+        <section class="page-header">
+            <h1 class="project-name">Markedit</h1>
+            <h2 class="project-tagline">Markedit is a simple JavaScript only markdown widget.</h2>
+        </section>
+        <p>
+            <a href="https://travis-ci.org/christiannwamba/markedit">
+                <embed src="https://travis-ci.org/christiannwamba/markedit.svg?branch=master" />
+            </a>
+            <a href="https://www.npmjs.com/package/markedit"><img src="https://badge.fury.io/js/markedit.svg" alt="npm version" /></a>
+            <a href="https://codeclimate.com/github/christiannwamba/markedit"><img src="https://codeclimate.com/github/christiannwamba/markedit/badges/gpa.svg" alt="Code Climate" /></a>
+            <a href="https://codeclimate.com/github/christiannwamba/markedit/coverage"><img src="https://codeclimate.com/github/christiannwamba/markedit/badges/coverage.svg" alt="Test Coverage" /></a>
+        </p>
+        <div class="figure">
+            <img src="markedit.jpg" alt="Markedit" />
+        </div>
+        <div id="md1"></div>
+        <h2 id="features">Features</h2>
+        <ul>
+            <li><strong>Small</strong> and <strong>simple</strong></li>
+            <li>Not <strong>jQuery</strong> dependent</li>
+            <li>Easy <strong>Image</strong> upload</li>
+            <li>Easy to <strong>customize</strong></li>
+            <li>Works with any browser above <strong>IE9</strong></li>
+        </ul>
+        <h2 id="getting-started">Getting Started</h2>
+        <ul>
+            <li>Add Markedit to your project using NPM or bower by running either of the following:</li>
+        </ul>
+        <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># NPM</span>
 <span class="kw">npm</span> install markedit
 
 <span class="co"># Bower</span>
 <span class="kw">bower</span> install markedit</code></pre>
-    <p>CDN coming soon</p>
-    <ul>
-        <li>Include Markedit to your code</li>
-    </ul>
-    <pre class="js"><code>var Markedit = require(&#39;markedit&#39;);
+        <p>CDN coming soon</p>
+        <ul>
+            <li>Include Markedit to your code</li>
+        </ul>
+        <pre class="js"><code>var Markedit = require(&#39;markedit&#39;);
 
 var markedit = new Markedit(options);</code></pre>
-    <p>Or</p>
-    <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;dist/markedit.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+        <p>Or</p>
+        <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;dist/markedit.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
 <span class="kw">&lt;script&gt;</span>
 <span class="er">    var markedit = new Markedit(options);</span>
 <span class="kw">&lt;/script&gt;</span></code></pre>
-    <p>Include the css file:</p>
-    <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;dist/markedit.css&quot;</span><span class="kw">&gt;</span></code></pre>
-    <p><code>markedit.css</code> references the font files which is available in the dist folder. If you plan to go custom, see <a href="https://github.com/christiannwamba/markedit#custom-style">Custom Styles</a></p>
-    <ul>
-        <li>Configure Options</li>
-    </ul>
-    <pre class="js"><code>var options = {
+        <p>Include the css file:</p>
+        <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;dist/markedit.css&quot;</span><span class="kw">&gt;</span></code></pre>
+        <p><code>markedit.css</code> references the font files which is available in the dist folder. If you plan to go custom, see <a href="https://github.com/christiannwamba/markedit#custom-style">Custom Styles</a></p>
+        <ul>
+            <li>Configure Options</li>
+        </ul>
+        <pre class="js"><code>var options = {
             container: &#39;md&#39;,
             width: &#39;400px&#39;,
             height: &#39;400px&#39;,
             resize: &#39;both&#39;
         };</code></pre>
-    <ul>
-        <li>Load</li>
-    </ul>
-    <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;page_wrap&quot;</span><span class="kw">&gt;</span>
+        <ul>
+            <li>Load</li>
+        </ul>
+        <pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;page_wrap&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;md&quot;</span><span class="kw">&gt;&lt;/div&gt;</span>
 <span class="kw">&lt;/div&gt;</span></code></pre>
-    <h2 id="configuration">Configuration</h2>
-    <table>
-        <thead>
-            <tr class="header">
-                <th align="left">Option</th>
-                <th align="left">Description</th>
-                <th align="left">Default</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="odd">
-                <td align="left">height</td>
-                <td align="left">Widget height</td>
-                <td align="left">400px</td>
-            </tr>
-            <tr class="even">
-                <td align="left">width</td>
-                <td align="left">Widget width</td>
-                <td align="left">400px</td>
-            </tr>
-            <tr class="odd">
-                <td align="left">imageUrl</td>
-                <td align="left">Endpoint for handling image upload</td>
-                <td align="left">null</td>
-            </tr>
-            <tr class="even">
-                <td align="left">marked</td>
-                <td align="left"><a href="https://github.com/chjj/marked">Marked</a>'s configuration object</td>
-                <td align="left">null</td>
-            </tr>
-            <tr class="odd">
-                <td align="left">markedHandler</td>
-                <td align="left"><a href="https://github.com/chjj/marked">Marked</a>'s callback</td>
-                <td align="left">null</td>
-            </tr>
-            <tr class="even">
-                <td align="left">resizeable</td>
-                <td align="left">Determines if widget should be resizeable or not (<code>both</code>, <code>horizontal</code>, <code>vertical</code>, <code>none</code>)</td>
-                <td align="left">none</td>
-            </tr>
-        </tbody>
-    </table>
-    <blockquote>
-        <p>Markedit uses <a href="https://github.com/chjj/marked">Marked</a> to parse markdown. <code>options.marked</code> and <code>options.markedHandler</code> are passed as argument to Marked when parsing.</p>
-    </blockquote>
-    <p>## Events</p>
-    <p>You can also pass in some callbacks to the config to handle the events. Supported events are:</p>
-    <ul>
-        <li><strong>onFocus</strong>: Called when the editor has focus:</li>
-    </ul>
-    <pre class="js"><code>var options = {
+        <h2 id="configuration">Configuration</h2>
+        <table>
+            <thead>
+                <tr class="header">
+                    <th align="left">Option</th>
+                    <th align="left">Description</th>
+                    <th align="left">Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left">height</td>
+                    <td align="left">Widget height</td>
+                    <td align="left">400px</td>
+                </tr>
+                <tr class="even">
+                    <td align="left">width</td>
+                    <td align="left">Widget width</td>
+                    <td align="left">400px</td>
+                </tr>
+                <tr class="odd">
+                    <td align="left">imageUrl</td>
+                    <td align="left">Endpoint for handling image upload</td>
+                    <td align="left">null</td>
+                </tr>
+                <tr class="even">
+                    <td align="left">marked</td>
+                    <td align="left"><a href="https://github.com/chjj/marked">Marked</a>'s configuration object</td>
+                    <td align="left">null</td>
+                </tr>
+                <tr class="odd">
+                    <td align="left">markedHandler</td>
+                    <td align="left"><a href="https://github.com/chjj/marked">Marked</a>'s callback</td>
+                    <td align="left">null</td>
+                </tr>
+                <tr class="even">
+                    <td align="left">resizeable</td>
+                    <td align="left">Determines if widget should be resizeable or not (<code>both</code>, <code>horizontal</code>, <code>vertical</code>, <code>none</code>)</td>
+                    <td align="left">none</td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <p>Markedit uses <a href="https://github.com/chjj/marked">Marked</a> to parse markdown. <code>options.marked</code> and <code>options.markedHandler</code> are passed as argument to Marked when parsing.</p>
+        </blockquote>
+        <p>## Events</p>
+        <p>You can also pass in some callbacks to the config to handle the events. Supported events are:</p>
+        <ul>
+            <li><strong>onFocus</strong>: Called when the editor has focus:</li>
+        </ul>
+        <pre class="js"><code>var options = {
     onFocus: function(e) {
       console.log(e);
     }
 };</code></pre>
-    <ul>
-        <li><strong>onBlur</strong>: Called when the editor looses focus:</li>
-    </ul>
-    <pre class="js"><code>var options = {
+        <ul>
+            <li><strong>onBlur</strong>: Called when the editor looses focus:</li>
+        </ul>
+        <pre class="js"><code>var options = {
     onBlur: function(e) {
       console.log(e);
     }
 };</code></pre>
-    <ul>
-        <li><strong>onPreview</strong>: Called when the preview button is clicked:</li>
-    </ul>
-    <pre class="js"><code>var options = {
+        <ul>
+            <li><strong>onPreview</strong>: Called when the preview button is clicked:</li>
+        </ul>
+        <pre class="js"><code>var options = {
     onPreview: function(e) {
       console.log(e);
     }
 };</code></pre>
-    <ul>
-        <li><strong>onFullscreen</strong>: Called when the full screen button is clicked:</li>
-    </ul>
-    <pre class="js"><code>var options = {
+        <ul>
+            <li><strong>onFullscreen</strong>: Called when the full screen button is clicked:</li>
+        </ul>
+        <pre class="js"><code>var options = {
     onFullscreen: function(e) {
       console.log(e);
     }
 };</code></pre>
-    <h2 id="image-upload">Image Upload</h2>
-    <p>Markedit supports image upload. To enable this feature, set the <code>imageUrl</code> to the url upload endpoint</p>
-    <pre class="js"><code>var options = {
+        <h2 id="image-upload">Image Upload</h2>
+        <p>Markedit supports image upload. To enable this feature, set the <code>imageUrl</code> to the url upload endpoint</p>
+        <pre class="js"><code>var options = {
     imageUrl: &#39;http://localhost:3000/images/upload&#39;
 }</code></pre>
-    <p>The normal behavior of clicking the image button is to insert markdown image template at the cursor position but with image upload enabled, a file upload dialogue will be opened.</p>
-    <p>The end point provided should return a response that has an image property:</p>
-    <pre class="js"><code>{
+        <p>The normal behavior of clicking the image button is to insert markdown image template at the cursor position but with image upload enabled, a file upload dialogue will be opened.</p>
+        <p>The end point provided should return a response that has an image property:</p>
+        <pre class="js"><code>{
     image: &#39;http://localhost:3000/uploads/just-uploaded.jpg&#39;
 }</code></pre>
-    <p>An example handler using express and multer:</p>
-    <pre class="js"><code>// Imports
+        <p>An example handler using express and multer:</p>
+        <pre class="js"><code>// Imports
 var express = require(&#39;express&#39;);
 var bodyParser = require(&#39;body-parser&#39;);
 var multer = require(&#39;multer&#39;);
@@ -184,9 +184,9 @@ app.post(&#39;/api/image&#39;, upload.single(&#39;image&#39;), function (req, re
 app.listen(app.get(&#39;port&#39;), function () {
             console.log(`Server started: http://localhost:${port}/`);
         });</code></pre>
-    <h2 id="custom-style">Custom Style</h2>
-    <p>You can override the provided style. To do so, you need to understand the DOM hierachy. Below is how the DOM looks under the hood:</p>
-    <pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit&quot;</span><span class="kw">&gt;</span>
+        <h2 id="custom-style">Custom Style</h2>
+        <p>You can override the provided style. To do so, you need to understand the DOM hierachy. Below is how the DOM looks under the hood:</p>
+        <pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;markedit__controls&quot;</span><span class="kw">&gt;</span>
       <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;markedit__control bold&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;i</span><span class="ot"> class=</span><span class="st">&quot;icon-bold&quot;</span><span class="kw">&gt;&lt;/i&gt;</span>
@@ -207,36 +207,38 @@ app.listen(app.get(&#39;port&#39;), function () {
       a
     <span class="kw">&lt;/div&gt;</span>
   <span class="kw">&lt;/div&gt;</span></code></pre>
-    <p>What you can then do is use the classes to target each item and add your custom style::</p>
-    <pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.markedit__preview</span><span class="kw">{</span>
+        <p>What you can then do is use the classes to target each item and add your custom style::</p>
+        <pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.markedit__preview</span><span class="kw">{</span>
     <span class="kw">background:</span> <span class="dt">black</span><span class="kw">;</span>
     <span class="kw">color:</span> <span class="dt">white</span><span class="kw">;</span>
 <span class="kw">}</span></code></pre>
-    <h2 id="examples">Examples</h2>
-    <p>See the examples folder in this repository for a working demo</p>
-    <h2 id="contributing">Contributing</h2>
-    <ol style="list-style-type: decimal">
-        <li>Fork the repository</li>
-        <li>Clone to your workspace</li>
-        <li>Run <code>npm install</code></li>
-        <li>Create a feature or bug fix branch</li>
-        <li>Make changes</li>
-        <li>Run <code>grunt</code> to:
-            <ul>
-                <li>Lint</li>
-                <li>Test</li>
-                <li>Build</li>
-            </ul>
-        </li>
-        <li>Push and send in PR.</li>
-    </ol>
-    <h2 id="credits">Credits</h2>
-    <p><span class="citation"><a href="https://twitter.com/chrizt_n" id="support-or-contact">@chrizt_n</a></span></p>
-  </div>
-<script type="text/javascript" src="javascripts/markedit/markedit.min.js"></script>
-<script type="text/javascript">
-  var md1 = new Markdedit({container:'md1'});
-</script>
+        <h2 id="examples">Examples</h2>
+        <p>See the examples folder in this repository for a working demo</p>
+        <h2 id="contributing">Contributing</h2>
+        <ol style="list-style-type: decimal">
+            <li>Fork the repository</li>
+            <li>Clone to your workspace</li>
+            <li>Run <code>npm install</code></li>
+            <li>Create a feature or bug fix branch</li>
+            <li>Make changes</li>
+            <li>Run <code>grunt</code> to:
+                <ul>
+                    <li>Lint</li>
+                    <li>Test</li>
+                    <li>Build</li>
+                </ul>
+            </li>
+            <li>Push and send in PR.</li>
+        </ol>
+        <h2 id="credits">Credits</h2>
+        <p><span class="citation"><a href="https://twitter.com/chrizt_n" id="support-or-contact">@chrizt_n</a></span></p>
+        </div>
+        <script type="text/javascript" src="javascripts/markedit/markedit.min.js"></script>
+        <script type="text/javascript">
+            var md1 = new Markedit({
+                container: 'md1'
+            });
+        </script>
 </body>
 
 </html>
